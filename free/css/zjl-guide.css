@@ -1,11 +1,12 @@
 .bread {
-  color: #aaa; 
-  margin-top:20px;
+  color: #333; 
+  /*margin-top:20px;*/
   }
   .bread span {
-    color: #aaa; }
+    color: #333; }
   .bread a {
-    color: #aaa; }
+    color: #333;
+    font-size: 12px }
 
 .title {
   display: block;
@@ -19,7 +20,7 @@
 
 span {
   color: #787878;
-  font-size: 15px; }
+  font-size: 12px; }
 
 p {
   color: #a9a9a9;}
@@ -186,4 +187,7 @@ li.da{
 	.row p{
 		font-size: 14px;
 	}
+}
+.zjl>.col-xs-12{
+  background: #fff;
 }

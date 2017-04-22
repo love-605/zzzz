@@ -27,11 +27,11 @@
 							<i class="iconfont icon-sousuo-sousuo"></i>
 						</div>
 						<div class='home col-xs-1'>
-							<a href="index.html">
-								<i class="iconfont icon-home-copy"></i>
+							<a href="index.html" style='overflow:hidden'>
+								<i class="iconfont icon-home-copy" style='line-height:28px;'></i>
 							</a>
 						</div>
-						<div class='tiao col-xs-1'>
+						<div class='tiao col-xs-1' style='margin-top:5px'>
 							<i class="iconfont icon-santiaogang"></i>
 						</div>
 					</div>
@@ -747,9 +747,9 @@ mixture.Alpine skiing consists of downhill, small rotation and giant slalom (sla
 	</body>
 </html>
 <script>
-		let imgs=$('.zwul li');
-		let now=0,next=0,prev=0;
-		let flag=true;
+		var imgs=$('.zwul li');
+		var now=0,next=0,prev=0;
+		var flag=true;
 		function move(way='right'){
 			if(way=='right'){
 				next=now+1;
@@ -799,7 +799,7 @@ mixture.Alpine skiing consists of downhill, small rotation and giant slalom (sla
 	$('.zwnav li').click(function(){
 		$('.zwnav li').removeClass('zwactive');	
 		$(this).addClass('zwactive');	
-		let index =$('.zwnav li').index(this);
+		var index =$('.zwnav li').index(this);
 	    $('.zwul').stop().eq(index).fadeIn(800).addClass('first').siblings().fadeOut(800).removeClass('first'); 
 	})
 </script>

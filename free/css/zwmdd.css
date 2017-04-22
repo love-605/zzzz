@@ -2,8 +2,10 @@
 
 .iconfont {
   float: left;
+  font-size: 12px;
   margin-top: 1.5px;
 }
+
 h6 a{
   color: #333333;
 }
@@ -11,12 +13,16 @@ h6 a{
   text-align: center;
   padding: 60px 0;
 }
-
+h6 a:hover{
+  color: #333333;
+}
 .zwsy img {
   display: block;
   margin: 0 auto;
 }
-
+.zwbt h6{
+  margin-top: 1px;
+}
 .zwhi {
   width: 100%;
   height: 300px;

@@ -1,10 +1,10 @@
 .bread {
-  color: #aaa;
-  margin-top:20px;}
+  color: #333;
+  /*margin-top:20px;*/}
   .bread span {
-    color: #aaa; }
+    color: #333; }
   .bread a {
-    color: #aaa; }
+    color: #333; }
 
 .title {
   display: block;
@@ -21,15 +21,16 @@
 p {
   margin-top: 20px;
   color: #858585;
-  text-align: justify; }
+  text-align: justify;
+  font-size: 12px; }
 
 p.chinese {
   letter-spacing: 2px;
-  font-size: 16px; }
+  font-size: 12px; }
 
 p.english {
   line-height: 25px;
-  font-size: 16px; }
+  font-size: 12px; }
 
 .fynav {
   width: 80%;
@@ -124,3 +125,8 @@ p.english {
   font-size: 40px;
   text-align: center;
   margin: 20px 0; }
+@media screen and (min-width:1190px ) {
+  .row p{
+    font-size: 18px;
+  }
+}

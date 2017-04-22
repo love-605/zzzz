@@ -13,11 +13,11 @@ a:hover {
   text-decoration: none; }
 
 .bread {
-  color: #aaa; }
+  color: #333; }
   .bread span {
-    color: #aaa; }
+    color: #333; }
   .bread a {
-    color: #aaa; }
+    color: #333; }
 
 .title {
   display: block;

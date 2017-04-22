@@ -1,5 +1,4 @@
 
-
 .zwlarge,ul,.col-xs-6,.col-xs-3,.zwenglish{
 	padding: 0;
 }
@@ -119,8 +118,8 @@ p{
 a{
 	color: #333333;
 }
-h6 a{
-	color: #337AB7;
+h6 a:hover{
+	color: #333333;
 }
 .zwhd span.zwmore{
 	float: right;
