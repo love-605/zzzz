@@ -6,9 +6,6 @@ $(document).ready(function(){
 		strategylis.removeClass('active').eq(num).addClass('active');
 		strategyimgs.removeClass('active').eq(num).addClass('active');
 	})
-	strategyimgs.click(function(){
-		location.href='zjl-guide.html';
-	})
 	
 	var destinationlglis=$('.destination .lgcircle li');
 	var destinationxslis=$('.destination .xscircle li');
@@ -24,9 +21,6 @@ $(document).ready(function(){
 		var num=$(this).index();
 		destinationxslis.removeClass('active').eq(num).addClass('active');
 		destinationimgs.removeClass('active').eq(num).addClass('active');
-	})
-	destinationimgs.click(function(){
-		location.href='zwmdd.html';
 	})
 	destinationleft.click(function(){
 		var now=$('.destination .img >li.active').index();
@@ -71,18 +65,18 @@ $(document).ready(function(){
 		merchantlis.removeClass('active').eq(num).addClass('active');
 		merchantimgs.removeClass('active').eq(num).addClass('active');
 	})
-	$('.zn_zi1 p:nth-child(2)').click(function(){
-		location.href='merchant.html';
-	})
-	$('.zn_zi2 p:nth-child(2)').click(function(){
-		location.href='merchant.html';
-	})
-	$('.community .container li.active img ').click(function(){
-		location.href='nearby.html';
-	})
-	$('.travel .row li > div').click(function(){
-		location.href='zwsyyj.html';
-	})
+	// $('.zn_zi1 p:nth-child(2)').click(function(){
+	// 	location.href='merchant.html';
+	// })
+	// $('.zn_zi2 p:nth-child(2)').click(function(){
+	// 	location.href='merchant.html';
+	// })
+	// $('.community .container li.active img ').click(function(){
+	// 	location.href='nearby.html';
+	// })
+	// $('.travel .row li > div').click(function(){
+	// 	location.href='zwsyyj.html';
+	// })
 	
 	
 	

@@ -745,61 +745,18 @@ mixture.Alpine skiing consists of downhill, small rotation and giant slalom (sla
 			</div>
 		</footer>
 	</body>
-</html>
-<script>
-		var imgs=$('.zwul li');
-		var now=0,next=0,prev=0;
-		var flag=true;
-		function move(way='right'){
-			if(way=='right'){
-				next=now+1;
-				prev=now-1;
-				console.log(next)
-//				console.log(prev)
-				if(next>=imgs.length){
-					next=0;
-				}
-				imgs.get(next).style.left="100%";
-				imgs.eq(next).animate({left:0},500).addClass('zwblow').end().eq(now).animate({left:'-100%'},500,function(){
-					flag=true;
-				}).removeClass('zwblow').addClass('zwleft').end().eq(prev).animate({left:'100%'},500);
-				now=next;
-			}
-			if(way=='left'){
-				next=now-1;
-				console.log(next)
-				if(next<0){
-					next=imgs.length-1;
-				}
-				imgs.get(next).style.left="-100%";
-				imgs.eq(next).animate({left:0},'500').addClass('zwblow').end().eq(now).animate({left:'100%'},500,function(){
-					flag=true;
-				}).removeClass('zwblow').addClass('zwright').end().eq(prev).animate({left:'-100%'},500);
-				now=next;
-			}	
-		}
-			
-		$('.left').click(function(){
-			if(flag){
-				flag=false;
-				move('left')
-			}
-		})
-		$('.right').click(function(){
-			if(flag){
-				flag=false;
-				move()
-			}
-		})
+
+	<script>
+	
 		
-	
-	
-	
-//	轮播
-	$('.zwnav li').click(function(){
-		$('.zwnav li').removeClass('zwactive');	
-		$(this).addClass('zwactive');	
-		var index =$('.zwnav li').index(this);
-	    $('.zwul').stop().eq(index).fadeIn(800).addClass('first').siblings().fadeOut(800).removeClass('first'); 
-	})
+	//	轮播
+		$('.zwnav li').click(function(){
+			$('.zwnav li').removeClass('zwactive');	
+			$(this).addClass('zwactive');	
+			var index =$('.zwnav li').index(this);
+		   	$('.zwul').stop().eq(index).fadeIn(800).addClass('first').siblings().fadeOut(800).removeClass('first'); 
+		})
+		$('.zwnav li').triggerHandler('click');
+
 </script>
+</html>

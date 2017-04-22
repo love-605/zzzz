@@ -268,14 +268,14 @@ this"Water" in the footsteps of spring I walk in this "Water"  in the  footsteps
 			</div>
 		</footer>
 	</body>
+	<script>	
+		$('.zw').mouseenter(function(){
+			$('.zw').find('div').removeClass('zworange');
+			$('.zw').find('span').removeClass('zwyellow');
+			$(this).find('span').addClass('zwyellow');
+			$(this.firstElementChild).addClass('zworange');		
+			var index =$('.zw').index(this);
+		    $('.zwli').stop().eq(index).fadeIn(800).siblings().fadeOut(800); 
+		})
+	</script>
 </html>
-<script>	
-	$('.zw').mouseenter(function(){
-		$('.zw').find('div').removeClass('zworange');
-		$('.zw').find('span').removeClass('zwyellow');
-		$(this).find('span').addClass('zwyellow');
-		$(this.firstElementChild).addClass('zworange');		
-		let index =$('.zw').index(this);
-	    $('.zwli').stop().eq(index).fadeIn(800).siblings().fadeOut(800); 
-	})
-</script>
