@@ -744,19 +744,17 @@ mixture.Alpine skiing consists of downhill, small rotation and giant slalom (sla
 				</div>
 			</div>
 		</footer>
-	</body>
 
-	<script>
-	
-		
-	//	轮播
-		$('.zwnav li').click(function(){
-			$('.zwnav li').removeClass('zwactive');	
-			$(this).addClass('zwactive');	
-			var index =$('.zwnav li').index(this);
-		   	$('.zwul').stop().eq(index).fadeIn(800).addClass('first').siblings().fadeOut(800).removeClass('first'); 
-		})
-		$('.zwnav li').triggerHandler('click');
+		<script>
+			//	轮播
+				$('.zwnav li').click(function(){
+					$('.zwnav li').removeClass('zwactive');	
+					$(this).addClass('zwactive');	
+					var index =$('.zwnav li').index(this);
+				   	$('.zwul').stop().eq(index).fadeIn(800).addClass('first').siblings().fadeOut(800).removeClass('first'); 
+				})
+				$('.zwnav li').triggerHandler('click');
 
-</script>
+		</script>
+	</body>	
 </html>
